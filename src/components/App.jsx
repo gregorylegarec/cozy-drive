@@ -29,7 +29,7 @@ class App extends Component {
     }
   }
 
-  render ({ t, error, children }) {
+  render ({ t, error, children, folder }) {
     return (
       <div class={classNames(styles['fil-wrapper'], styles['coz-sticky'])}>
         { error && <Alerter
@@ -41,7 +41,7 @@ class App extends Component {
         <Sidebar />
 
         <main class={styles['fil-content']}>
-          <Topbar />
+          <Topbar folder={folder} />
           { children }
         </main>
       </div>

@@ -5,9 +5,9 @@ import React from 'react'
 import Toolbar from '../containers/Toolbar'
 import Breadcrumb from './Breadcrumb'
 
-const Topbar = () => (
+const Topbar = ({ folder }) => (
   <div class={styles['fil-content-header']}>
-    <Breadcrumb />
+    <Breadcrumb folder={folder} />
     <Toolbar />
   </div>
 )
